@@ -1,11 +1,11 @@
 <?php
 class zeus {
   public function cpu_match_user() {
-    $array = [];
-    for ($i = 0; $i < 10000; $i++) {
-      array_push($array, $i);
-      var_dump($array);
+    $string = '';
+    for ($i = 0; $i < 100000000; $i++) {
+      $string . (string)$i;
     }
+    //var_dump($string);
   }
 }
 
